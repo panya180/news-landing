@@ -5,15 +5,48 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Новини, вакансії та тривоги — Telegram канали</title>
 <meta name="description" content="Актуальні новини, вакансії у Києві та сповіщення про повітряні тривоги — підпишіться на наші Telegram канали.">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+<style>
+  :root{--bg:#0b0d12;--card:#151822;--card-hover:#1c202c;--text:#e7e9ee;--muted:#8b93a7;--accent:#4f8cff;--accent2:#ff6b6b;--border:#232838;}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--text);font-family:-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;line-height:1.5}
+  header{padding:56px 20px 32px;text-align:center;max-width:760px;margin:0 auto}
+  header h1{font-size:2rem;margin:0 0 10px;letter-spacing:-0.02em}
+  header p{color:var(--muted);margin:0;font-size:1rem}
+  main{max-width:760px;margin:0 auto;padding:0 20px 60px}
+  .grid{display:grid;grid-template-columns:1fr;gap:14px}
+  @media(min-width:640px){.grid{grid-template-columns:1fr 1fr}}
+  a.card{display:block;background:var(--card);border:1px solid var(--border);border-radius:14px;padding:22px;text-decoration:none;color:var(--text);transition:transform .15s ease,background .15s ease,border-color .15s ease}
+  a.card:hover{background:var(--card-hover);border-color:var(--accent);transform:translateY(-2px)}
+  a.card .icon{font-size:1.6rem;margin-bottom:8px;display:block}
+  a.card h2{font-size:1.05rem;margin:0 0 6px}
+  a.card p{margin:0;color:var(--muted);font-size:.88rem}
+  footer{text-align:center;color:var(--muted);font-size:.8rem;padding:20px}
+</style>
 </head>
 <body>
-<main class="container">
-<h1>Наші Telegram канали</h1>
-<ul>
-  <li><a href="jobs-kyiv.html">Вакансії Київ — робота без реєстрації, актуальні пропозиції</a></li>
-  <li><a href="air-alerts.html">Повітряні тривоги — напрямок БПЛА та ракет у реальному часі</a></li>
-</ul>
+<header>
+  <h1>Наші Telegram канали</h1>
+  <p>Свіжі новини, вакансії у Києві та сповіщення про повітряні тривоги — в одному місці</p>
+</header>
+<main>
+  <div class="grid">
+    <a class="card" href="news.html">
+      <span class="icon">📰</span>
+      <h2>Новини</h2>
+      <p>Головні новини дня — коротко і по суті</p>
+    </a>
+    <a class="card" href="jobs-kyiv.html">
+      <span class="icon">💼</span>
+      <h2>Вакансії Київ</h2>
+      <p>Робота без реєстрації, актуальні пропозиції щодня</p>
+    </a>
+    <a class="card" href="air-alerts.html">
+      <span class="icon">🚨</span>
+      <h2>Повітряні тривоги</h2>
+      <p>Напрямок БПЛА та ракет у реальному часі</p>
+    </a>
+  </div>
 </main>
+<footer>© 2026</footer>
 </body>
 </html>
